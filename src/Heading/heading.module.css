@@ -1,0 +1,67 @@
+.heading{
+   margin-top: 20%;
+}
+
+.starBtn{  
+    margin:16px;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 50%;
+    height: 14%;
+    font-size: large;
+    padding: 8px;
+    max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.warning{
+    color: #ac0bff ;
+    margin-top: -24px;
+}
+
+.time{
+    color:#ac0bff;
+}
+
+.countDown{
+    color: azure;
+}
+
+.inputDate{
+    padding: 8px;
+  background-color: #8da3f8;
+  border-radius: 8px;
+  border:2px solid black;
+  color: aliceblue;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexChild{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    margin: 80px 16px;
+    border-radius: 20%;
+    background-color: rgba(163,86,255,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #d9d4f7;
+}
+
+.flexParent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
