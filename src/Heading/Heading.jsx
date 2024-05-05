@@ -9,6 +9,7 @@ const Heading = () => {
   const [sec,setsecs] = useState(0)
   const [timer,setTimer] = useState(false)
   const [moreDays,setMoreDays] = useState(false) 
+  const [congratulationsBanner,setCongratulationsBanner] = useState(false) 
   
   useEffect(()=>{
     let interval
@@ -31,6 +32,9 @@ const Heading = () => {
           setHours(23)
           setsecs(59)
           setMins(59)
+        }
+        if (days <= 0 && hours <= 0 && min <= 0 && sec <= 0){
+          setCongratulationsBanner(true)
         }
       },1000)
     }
@@ -68,7 +72,8 @@ const Heading = () => {
      <h5 type="submit" onClick={()=>setTimer(true)} className={styles.starBtn}>Start Timer</h5>
      
       </div>
-    {moreDays === true ? <h2 className={styles.warning}>Selected days are more than 100</h2> :
+      {congratulationsBanner === true ? <h2 className={styles.congo}>The countdown is over! what's next on your adventure? </h2>:
+    moreDays === true ? <h2 className={styles.warning}>Selected days are more than 100</h2> :
     <div className={styles.flex}>
       <div className={styles.flexChild}><p>{days}</p><p>Days</p></div>
       <div className={styles.flexChild}><p>{hours}</p><p>Hours</p></div>

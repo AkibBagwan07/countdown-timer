@@ -15,8 +15,15 @@
   margin-right: auto;
   cursor: pointer;
   color: aliceblue;
+  background-color: #8da3f8;
 }
 
+/* .starBtn:hover{
+    background-color: antiquewhite;
+} */
+.congo{
+    color: #ac0bff ;
+}
 .warning{
     color: #ac0bff ;
     margin-top: -24px;
